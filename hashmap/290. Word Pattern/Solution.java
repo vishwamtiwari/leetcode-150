@@ -14,9 +14,9 @@ class Solution {
                 if (!existng.equals(word)) return false;
             }
             else {
-                if (values.contains(words[i])) return false;
-                values.add(words[i]);
-                wordMap.put(pattern.charAt(i), words[i]);
+                if (values.contains(word)) return false;
+                values.add(word);
+                wordMap.put(c, word);
             }
         }
         return true;
